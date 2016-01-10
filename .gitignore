@@ -1,3 +1,7 @@
 # dlang
 d/*
 !d/*.d
+
+# rust
+rust/*
+!rust/*.rs
