@@ -4,13 +4,5 @@ fn main() {
 }
 
 fn sum_divisor_of_three_or_five(n: u32) -> u32 {
-    let mut sum = 0;
-
-    for i in 1..n {
-        if i % 3 == 0 || i % 5 == 0 {
-            sum += i;
-        }
-    }
-
-    return sum;
+    (1..n).filter(|x| x % 3 == 0 || x % 5 == 0).fold(0, |current, x| current + x)
 }
